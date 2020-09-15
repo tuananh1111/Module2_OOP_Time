@@ -9,6 +9,9 @@ public class Time {
         int[] array= new int[10000];
         int min;
         int i,j;
+        for(int k=1;k<array.length;k++){
+            array[k]=(int) (Math.random()*10000+1);
+        }
 
         double beginTime= watch.start();
         for ( i=0;i<array.length-1;i++){
